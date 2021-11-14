@@ -43,7 +43,7 @@ public class            MessageServices {
                 if (message.getMessageText()!= null) {
                     e.get().setMessageText(message.getMessageText());
                     e.get().setClient(message.getClient());
-                    e.get().setPartyroom(message.getPartyroom());
+                    e.get().setSkate(message.getSkate());
                 }
                 messageRepository.save(e.get());
                 return e.get();

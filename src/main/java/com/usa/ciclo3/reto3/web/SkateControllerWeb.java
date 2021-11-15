@@ -29,13 +29,13 @@ public class SkateControllerWeb {
     private SkateServices skateServices;
 
     @GetMapping("/all")
-    public List<Skate> getPartyroom(){
+    public List<Skate> getSkate(){
 
         return skateServices.getAll();
     }
 
-    @GetMapping("/{idPartyroom}")
-    public Optional<Skate> getPartyroom (@PathVariable("idPartyroom") int id) {
+    @GetMapping("/{idSkate}")
+    public Optional<Skate> getSkate (@PathVariable("idSkate") int id) {
 
         return skateServices.getSkate(id);
     }

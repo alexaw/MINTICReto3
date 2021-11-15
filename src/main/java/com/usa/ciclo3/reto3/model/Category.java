@@ -48,8 +48,8 @@ public class Category implements Serializable {
         return skates;
     }
 
-    public void setSkates(List<Skate> skate) {
-        this.skates = skate;
+    public void setSkates(List<Skate> skates) {
+        this.skates = skates;
     }
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "category")

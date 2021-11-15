@@ -84,7 +84,7 @@ public class Skate implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "idCategory")
-    @JsonIgnoreProperties("skate")
+    @JsonIgnoreProperties("skates")
     private Category category;
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "skate")

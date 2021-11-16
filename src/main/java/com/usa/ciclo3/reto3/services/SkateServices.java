@@ -53,8 +53,8 @@ public class SkateServices {
                 if(skate.getDescription()!=null){
                     e.get().setDescription(skate.getDescription());
                 }
-                if(skate.getYear()!=null){
-                    e.get().setYear(skate.getYear());
+                if(skate.getCategory()!=null){
+                    e.get().setCategory(skate.getCategory());
                 }
                 skateRepository.save(e.get());
                 return e.get();
